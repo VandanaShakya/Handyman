@@ -15,16 +15,16 @@ import plumber2 from './home/plumber2.jpg'
 
 
 // services //
-import bathroom1 from './services/bathroom1.jpg'
-import bathroom2 from './services/bathroom2.jpg'
-import bathroom3 from './services/bathroom3.jpg'
-import bathroom4 from './services/bathroom4.jpg'
-import bathroom5 from './services/bathroom5.jpg'
+import bathroom1 from './services/Bathroom1.webp'
+import bathroom2 from './services/Bathroom2.webp'
+import bathroom3 from './services/Bathroom3.jpg'
+import bathroom4 from './services/Bathroom4.jpeg'
+import bathroom5 from './services/Bathroom5.webp'
 import bathroom6 from './services/bathroom6.jpg'
 
 // odd images //
 import odd1 from './services/odd1.jpg'
-import odd2 from './services/odd2.jpg'
+import odd2 from './services/odd2.webp'
 import odd3 from './services/odd3.jpg'
 import odd4 from './services/odd4.jpg'
 import odd5 from './services/odd5.webp'
@@ -53,12 +53,12 @@ import tiling9 from './services/tiling9.webp'
 
 
 // kitchen //
-import kitchen1 from './services/kitchen1.jpg'
-import kitchen2 from './services/kitchen2.jpg'
-import kitchen3 from './services/kitchen3.jpg'
-import kitchen4 from './services/kitchen4.jpg'
-import kitchen5 from './services/kitchen5.webp'
-import kitchen6 from './services/kitchen6.jpg'
+import kitchen1 from './services/Kitchen1.webp'
+import kitchen2 from './services/Kitchen2.jpg'
+import kitchen3 from './services/Kitchen3.webp'
+import kitchen4 from './services/Kitchen4.avif'
+import kitchen5 from './services/Kitchen5.jpg'
+import kitchen6 from './services/Kitchen6.jpg'
 
 
 // plumbing //
@@ -67,14 +67,14 @@ import plumbing2 from './services/plumbing2.jpg'
 import plumbing3 from './services/plumbing3.jpg'
 import plumbing4 from './services/plumbing4.jpg'
 import plumbing5 from './services/plumbing5.jpg'
-import plumbing6 from './services/plumbing6.jpg'
+import plumbing6 from './services/plumbing6.webp'
 
 
 // electrical //
 import electrical1 from './services/electrical1.jpg'
 import electrical2 from './services/electrical2.webp'
-import electrical3 from './services/electrical3.jpg'
-import electrical4 from './services/electrical4.jpg'
+import electrical3 from './services/Electrical3.webp'
+import electrical4 from './services/Electrical4.webp'
 import electrical5 from './services/electrical5.webp'
 
 // carpentry //
@@ -136,7 +136,7 @@ import wallPaper6 from './services/wallpaper6.png'
 
 
 // joinery //
-import joinery1 from './services/joinery1.jpg'
+import joinery1 from './services/joinery1.webp'
 import joinery2 from './services/joinery2.jpg'
 import joinery3 from './services/joinery3.webp'
 import joinery4 from './services/joinery4.jpg'
@@ -144,7 +144,7 @@ import joinery5 from './services/joinery5.jpg'
 import joinery6 from './services/joinery6.webp'
 import joinery7 from './services/joinery7.webp'
 import joinery8 from './services/joinery8.png'
-import joinery9 from './services/joinery9.png'
+import joinery9 from './services/joinery9.jpg'
 
 
 // fencing //
@@ -161,11 +161,11 @@ import plastering1 from './services/plastering1.png'
 import plastering2 from './services/plastering2.png'
 import plastering3 from './services/plastering3.jpg'
 import plastering4 from './services/plastering4.jpg'
-import plastering5 from './services/plastering5.png'
+import plastering5 from './services/plastering5.jpg'
 import plastering6 from './services/plastering6.png'
-import plastering7 from './services/plastering7.webp'
+import plastering7 from './services/plastering7.jpg'
 import plastering8 from './services/plastering8.jpg'
-import plastering9 from './services/plastering9.png'
+import plastering9 from './services/plastering9.webp'
 
 
 
@@ -173,8 +173,8 @@ import plastering9 from './services/plastering9.png'
 import flooring1 from './services/flooring1.jpg'
 import flooring2 from './services/flooring2.jpg'
 import flooring3 from './services/flooring3.png'
-import flooring4 from './services/flooring4.jpeg'
-import flooring5 from './services/flooring5.jpg'
+import flooring4 from './services/flooring4.jpg'
+import flooring5 from './services/flooring5.webp'
 
 // conatct us //
 import contactusImg from './home/contactus.webp'

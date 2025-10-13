@@ -1,6 +1,6 @@
 // Reviews.jsx
 import React, { useState, useEffect } from "react";
-import { reviewsData } from "./mainPagesData";
+import { reviewsData } from "./mainPagesData.jsx";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";

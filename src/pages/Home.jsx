@@ -2,23 +2,7 @@ import React, { useState, useEffect} from 'react'
 import { Link } from 'react-router-dom';
 import images from '../assets/images';
 import Form from '../components/Form';
-
-
-import {
-  FaBath,
-  FaTools,
-  FaPaintRoller,
-  FaUtensils,
-  FaThLarge, 
-  FaWrench,
-  FaPlug,
-  FaTint,
-  FaSeedling,
-  FaRulerCombined,
-  FaFillDrip,
-  FaHammer,
-  
-} from "react-icons/fa";
+import { services } from './mainPagesData.jsx';
 
 
 
@@ -64,17 +48,18 @@ const Home = () => {
 
     {/* Text Content */}
     <div className="w-full lg:w-2/4 text-center lg:text-left">
-      <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 uppercase tracking-wider text-amber-500">
-        My Mission
-      </h1>
+    <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 uppercase tracking-wider text-amber-500">
+  My Mission
+</h1>
 
-      <p className="text-lg sm:text-xl text-slate-300 mb-6">
-        HomeWorks Handyman Services is your one-stop solution for all of your home improvement needs.
-      </p>
+<p className="text-lg text-slate-300 mb-6">
+  I deliver a high-quality, bespoke handyman service across Bradford, West Yorkshire, and beyond. Every task I undertake is guided by reliability, professionalism, and respect—whether I’m assisting in a private home, supporting a care setting, or completing work for a business. No job is too small or unusual, and I approach every project with the same dedication and attention to detail.
+</p>
 
-      <p className="text-base text-slate-300 max-w-2xl mx-auto mb-8">
-        Serving South Manchester and beyond, HomeWorks Handyman services provides a fresh approach to hiring a tradesman through my commitment to:
-      </p>
+<p className="text-base text-slate-300 max-w-2xl mx-auto mb-8">
+  Serving South Manchester and surrounding areas, HomeWorks Handyman Services offers a fresh and trustworthy approach to hiring a tradesman. My commitment is to provide prompt, skilled, and dependable solutions that meet your needs efficiently and effectively.
+</p>
+
 
       <div className="flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-4 flex-wrap mb-16">
         <div
@@ -142,141 +127,35 @@ const Home = () => {
   </div>
 </div>
 
+<div className="max-w-6xl mx-auto mt-12 pt-8 border-t border-neutral-600 px-4 sm:px-6 lg:px-8">
+  <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center m-2 uppercase tracking-wider text-amber-700">
+    Services I Offer
+  </h2>
+  <div className="w-32 sm:w-40 h-1 mx-auto bg-amber-700 rounded-full mb-6"></div>
 
-        <div className="max-w-6xl mx-auto mt-12 pt-8 border-t border-neutral-600">
-          <h2 className="text-4xl sm:text-5xl font-extrabold text-center mb-12 uppercase tracking-wider text-white">
-            Services
-          </h2>
-          {/* servives */}
-    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8">
-  <Link to="/bathrooms">
-    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] cursor-pointer transition-shadow duration-300" >
-      <FaBath className="text-2xl" />
-      <span className="font-semibold text-lg">BATHROOMS</span>
-    </button>
-  </Link>
+  <p className="text-lg text-slate-300 mx-auto text-center mb-12 leading-relaxed max-w-4xl">
+    At HomeWorks, I offer a wide range of handyman services tailored to meet your needs. From painting, decorating, and plastering to full kitchen and bathroom work—including installation, resealing, tiling, and repairs. I also handle renovations, electrics, plumbing, joinery, door hanging, decking, and UPVC window fitting.  
+    My expertise extends to external fittings such as handrails, gutters, and catflaps, as well as PC repairs, flatpack assembly, and curtain rails. I can assist with waste removal, garden maintenance, and removals, and much more—ensuring a reliable, professional solution for every task, big or small.
+  </p>
 
-  <Link to="/odd-jobs">
-    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] cursor-pointer transition-shadow duration-300" >
-      <FaTools className="text-2xl" />
-      <span className="font-semibold text-lg">ODD JOBS</span>
-    </button>
-  </Link>
-
-  <Link to="/decorating">
-    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] cursor-pointer transition-shadow duration-300" >
-      <FaPaintRoller className="text-2xl" />
-      <span className="font-semibold text-lg">DECORATING</span>
-    </button>
-  </Link>
-
-  <Link to="/kitchen">
-    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] cursor-pointer transition-shadow duration-300" >
-      <FaUtensils className="text-2xl" />
-      <span className="font-semibold text-lg">KITCHENS</span>
-    </button>
-  </Link>
-
-  <Link to="/tiling">
-    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] cursor-pointer transition-shadow duration-300">
-      <FaThLarge className="text-2xl" />
-      <span className="font-semibold text-lg">TILING</span>
-    </button>
-  </Link>
-
-  <Link to="/repairs">
-    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] cursor-pointer transition-shadow duration-300" >
-      <FaWrench className="text-2xl" />
-      <span className="font-semibold text-lg">REPAIRS</span>
-    </button>
-  </Link>
-
-  <Link to="/electrical">
-    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] cursor-pointer transition-shadow duration-300">
-      <FaPlug className="text-2xl" />
-      <span className="font-semibold text-lg">ELECTRICAL</span>
-    </button>
-  </Link>
-
-  <Link to="/plumbing">
-    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] cursor-pointer transition-shadow duration-300">
-      <FaTint className="text-2xl" />
-      <span className="font-semibold text-lg">PLUMBING</span>
-    </button>
-  </Link>
-
-  <Link to="/gardening">
-    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] cursor-pointer transition-shadow duration-300" >
-      <FaSeedling className="text-2xl" />
-      <span className="font-semibold text-lg">GARDENS</span>
-    </button>
-  </Link>
-
-  <Link to="/flooring">
-    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] cursor-pointer transition-shadow duration-300" >
-      <FaRulerCombined className="text-2xl" />
-      <span className="font-semibold text-lg">FLOORING</span>
-    </button>
-  </Link>
-
-  <Link to="/plastering">
-    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] cursor-pointer transition-shadow duration-300">
-      <FaFillDrip className="text-2xl" />
-      <span className="font-semibold text-lg">PLASTERING</span>
-    </button>
-  </Link>
-
-  <Link to="/carpentry">
-    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] cursor-pointer transition-shadow duration-300" >
-      <FaHammer className="text-2xl" />
-      <span className="font-semibold text-lg">CARPENTRY</span>
-    </button>
-  </Link>
-
-   <Link to="/flat-packing">
-    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#493508] cursor-pointer transition-shadow duration-300">
-      <FaHammer className="text-2xl" />
-      <span className="font-semibold text-lg">Flat Packing</span>
-    </button>
-  </Link>
-   <Link to="/tv-mount">
-    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#493508] cursor-pointer transition-shadow duration-300" >
-      <FaHammer className="text-2xl" />
-      <span className="font-semibold text-lg">TV Mount</span>
-    </button>
-  </Link>
-
-   <Link to="/painting">
-    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#493508] cursor-pointer transition-shadow duration-300" >
-      <FaHammer className="text-2xl" />
-      <span className="font-semibold text-lg">Painting</span>
-    </button>
-  </Link>
-
-   <Link to="/wall-paper">
-    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#493508] cursor-pointer transition-shadow duration-300" >
-      <FaHammer className="text-2xl" />
-      <span className="font-semibold text-lg">Wall Paper</span>
-    </button>
-  </Link>
-
-  <Link to="/joinery">
-    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#493508] cursor-pointer transition-shadow duration-300">
-      <FaHammer className="text-2xl" />
-      <span className="font-semibold text-lg">Joinery</span>
-    </button>
-  </Link>
-
-  <Link to="/fencing">
-    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#493508] cursor-pointer transition-shadow duration-300" >
-      <FaHammer className="text-2xl" />
-      <span className="font-semibold text-lg">Fencing</span>
-    </button>
-  </Link>
-</div>
-
-
+  {/* Services Grid */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+    {services.map((service, idx) => {
+      const Icon = service.icon;
+      return (
+        <div key={idx} className="flex flex-col items-center text-center">
+          <Link to={service.link} className="w-full">
+            <button className="flex flex-col sm:flex-row items-center sm:space-x-3 justify-center p-4 sm:p-5 h-28 sm:h-24 w-full rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] cursor-pointer transition-all duration-300">
+              <Icon className="text-3xl sm:text-2xl mb-2 sm:mb-0" />
+              <span className="font-semibold text-lg">{service.title}</span>
+            </button>
+          </Link>
+        
         </div>
+      );
+    })}
+  </div>
+</div>
 
 
       </div>
@@ -290,15 +169,23 @@ const Home = () => {
             {/* Content Wrapper */}
             <div className="max-w-6xl mx-auto">
                 
-                {/* Heading Section */}
-                <div className="text-center mb-12">
-                    <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 uppercase tracking-wider text-white">
-                        My Work
-                    </h1>
-                    {/* Decorative Divider */}
-                    <div className="w-24 h-1 mx-auto bg-amber-600 rounded-full"></div>
-                </div>
+             {/* Heading Section */}
+<div className="text-center mb-12 px-4 sm:px-6 lg:px-8">
+  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 uppercase tracking-wider text-amber-700">
+   Who I Work With
+  </h1>
 
+  {/* Decorative Divider */}
+  <div className="w-50 h-1 mx-auto bg-amber-700 rounded-full mb-6"></div>
+
+  <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+    I provide services tailored to:<br /><br />
+    Private households – from small repairs to larger renovations.<br /><br />
+    Children’s residential care homes (regulated by Ofsted) – I understand the importance of urgent response and compliance, ensuring safe and well-maintained environments.<br /><br />
+    Adult care homes (regulated by the CQC) – I provide timely and reliable maintenance support to help meet regulatory standards and keep residents safe and comfortable.
+  </p>
+</div>
+ 
                 {/* Portfolio Grid - Responsive 2x3 layout */}
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
                     
