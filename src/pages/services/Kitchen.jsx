@@ -1,5 +1,4 @@
 import React, { useState, useEffect} from 'react'
-import images from '../../assets/images';
 import { kitchenData } from './serviceData';
 
 
