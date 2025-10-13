@@ -1,9 +1,32 @@
-import React from 'react'
+import React, { useState, useEffect} from 'react'
 import { motion } from 'framer-motion'
 import { oddJobsCards } from './serviceData'
 
 
 const Oddjobs = () => {
+  const [loading, setLoading] = useState(true)
+    
+      useEffect(() => {
+        // Simulate data loading
+        const timer = setTimeout(() => {
+          setLoading(false)
+        }, 1000) // simulate 1 second loading
+    
+        return () => clearTimeout(timer)
+      }, [])
+    
+      if (loading) {
+        return (
+          <div className=" w-full flex flex-col justify-center items-center h-[200px]">
+            {/* Spinner */}
+            <div className="w-12 h-12 border-4 border-t-[#A55018] border-gray-300 rounded-full animate-spin"></div>
+            {/* Loading text */}
+            <p className="mt-4 text-[#A55018] text-lg font-semibold animate-pulse">
+              Loading...
+            </p>
+          </div>
+        )
+      }
   return (
     <>
        <div className="bg-[#404040]">

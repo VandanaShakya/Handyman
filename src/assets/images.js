@@ -176,6 +176,9 @@ import flooring3 from './services/flooring3.png'
 import flooring4 from './services/flooring4.jpeg'
 import flooring5 from './services/flooring5.jpg'
 
+// conatct us //
+import contactusImg from './home/contactus.webp'
+
 const images = {
     excellenceImg,
     handymanImg,
@@ -352,6 +355,9 @@ const images = {
     flooring4,
     flooring5,
 
+
+    // conatct us //
+    contactusImg,
 
 };
 

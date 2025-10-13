@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect} from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import Statichero from './components/Statichero.jsx'
@@ -28,23 +28,55 @@ import Flatpacking from './pages/services/Flatpacking.jsx'
 import Flooring from './pages/services/Flooring.jsx'
 import Plastering from './pages/services/Plastering.jsx'
 import Repairs from './pages/services/Repairs.jsx'
+import ScrollToTop from './components/ScrollToTop.jsx'
+
+
 
 
 const App = () => {
+  const [loading, setLoading] = useState(true)
+    
+      useEffect(() => {
+        const timer = setTimeout(() => {
+          setLoading(false)
+        }, 1000) // simulate 1 second loading
+    
+        return () => clearTimeout(timer)
+      }, [])
+
+
+      
+    
+      if (loading) {
+        return (
+          <div className=" w-full flex flex-col justify-center items-center h-[200px]">
+            {/* Spinner */}
+            <div className="w-12 h-12 border-4 border-t-[#A55018] border-gray-300 rounded-full animate-spin"></div>
+            {/* Loading text */}
+            <p className="mt-4 text-[#A55018] text-lg font-semibold animate-pulse">
+              Loading...
+            </p>
+          </div>
+        )
+      }
   return (
   <>
+     <ScrollToTop />
   <Statichero/>
-     <Routes>
+    
+  
+      <Routes>
+   
     <Route path='/' element={<Home />} />
     <Route path='/my-blog' element={<Myblog />} />
     <Route path='/contact-us' element={<Contactus />} />
-    <Route path='/reviews' element={<Reviews />} />
+    <Route path='/review' element={<Reviews />} />
     <Route path='/about' element={<About />} />
     <Route path='/recaptcha' element={<Recaptcha/>} />
 
 
     {/* service components */}
-      <Route path='/bathroom' element={<Bathroom/>} />
+      <Route path='/bathrooms' element={<Bathroom/>} />
       <Route path='/odd-jobs' element={<Oddjobs/>} />
       <Route path='/decorating' element={<Decorating/>} />
       <Route path='/tiling' element={<Tiling/>} />
@@ -65,7 +97,9 @@ const App = () => {
       <Route path='/flooring' element={<Flooring />} />
       <Route path='/plastering' element={<Plastering />} />
       <Route path='/repairs' element={<Repairs />} />
+
    </Routes>
+    
 
    <Footer />
   </>

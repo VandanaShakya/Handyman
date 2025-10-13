@@ -35,9 +35,9 @@ export default function Navbar() {
   };
 
   return (
-    <nav ref={navRef} className="relative w-[60%] m-auto">
+    <nav ref={navRef} className="relative w-[60%] m-auto z-80">
       {/* Hamburger icon for mobile */}
-      <div className="fixed top-4 right-4 z-50 md:hidden">
+      <div className="fixed top-4 right-4  md:hidden">
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           className="text-gray-300 hover:text-white focus:outline-none"
@@ -81,7 +81,7 @@ export default function Navbar() {
               <div className="absolute top-full left-0 mt-0 w-full rounded-md shadow-lg z-20" style={{ backgroundColor: "#f5deb3" }}>
                 <div className="py-1">
                   {[
-                    "Bathroom", "Odd Jobs", "Decorating", "Tiling", "Kitchen", "Plumbing",
+                    "Bathrooms", "Odd Jobs", "Decorating", "Tiling", "Kitchen", "Plumbing",
                     "Electrical", "Carpentry", "Gardening", "Roofing", "TV Mount",
                     "Painting", "Wall Paper", "Joinery", "Fencing", "Flooring",
                     "Plastering", "Flat Packing", "Repairs"
@@ -101,7 +101,7 @@ export default function Navbar() {
           </div>
 
           {/* Other desktop links */}
-          {["MY BLOG", "REVIEW", "ABOUT", "CONTACT"].map((page, i) => (
+          {["MY BLOG", "REVIEW", "ABOUT", "CONTACT US"].map((page, i) => (
             <div key={i} className="flex-grow flex items-center h-full border-l border-gray-400">
               <Link
                 to={`/${page.toLowerCase().replace(" ", "-")}`}
@@ -152,7 +152,7 @@ export default function Navbar() {
             {isServicesOpen && (
               <div className="bg-[#f5deb3] flex flex-col max-h-[300px] overflow-y-auto">
                 {[
-                  "Bathroom", "Odd Jobs", "Decorating", "Tiling", "Kitchen", "Plumbing",
+                  "Bathrooms", "Odd Jobs", "Decorating", "Tiling", "Kitchen", "Plumbing",
                   "Electrical", "Carpentry", "Gardening", "Roofing", "TV Mount",
                   "Painting", "Wall Paper", "Joinery", "Fencing", "Flooring",
                   "Plastering", "Flat Packing", "Repairs"
@@ -170,7 +170,7 @@ export default function Navbar() {
             )}
           </div>
 
-          {["MY BLOG", "REVIEW", "ABOUT", "CONTACT"].map((page, i) => (
+          {["MY BLOG", "REVIEW", "ABOUT", "CONTACT US"].map((page, i) => (
             <Link
               to={`/${page.toLowerCase().replace(" ", "-")}`}
               key={i}

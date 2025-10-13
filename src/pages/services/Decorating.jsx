@@ -1,26 +1,50 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { decoratingData } from './serviceData'
 import { motion } from 'framer-motion'
 
 export default function Decorating() {
+const [loading, setLoading] = useState(true)
+  
+    useEffect(() => {
+      // Simulate data loading
+      const timer = setTimeout(() => {
+        setLoading(false)
+      }, 1000) // simulate 1 second loading
+  
+      return () => clearTimeout(timer)
+    }, [])
+  
+    if (loading) {
+      return (
+        <div className=" w-full flex flex-col justify-center items-center h-[200px]">
+          {/* Spinner */}
+          <div className="w-12 h-12 border-4 border-t-[#A55018] border-gray-300 rounded-full animate-spin"></div>
+          {/* Loading text */}
+          <p className="mt-4 text-[#A55018] text-lg font-semibold animate-pulse">
+            Loading...
+          </p>
+        </div>
+      )
+    }
+
   return (
     <div className="bg-[#404040] w-full">
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-12">
         {/* Heading */}
-        <h2 className="text-3xl sm:text-4xl md:text-5xl text-center font-extrabold text-[#A55018] mb-6">
-          Decorating
-        </h2>
+       <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center font-extrabold text-[#A55018] mb-6 px-4">
+  Decorating
+</h2>
 
-        {/* Paragraph */}
-        <p className="text-[#a09e9e] text-center md:text-left text-base sm:text-lg leading-relaxed max-w-4xl mx-auto md:mx-0 mb-8">
-          Whether it’s refreshing a single room or giving your entire home a new look, I offer
-          professional decorating services to transform your space. From painting walls and ceilings
-          to wallpapering and woodwork finishes, every detail is handled with care and precision.
-          I use high-quality materials and techniques to ensure a smooth, long-lasting finish.
-          I’m also happy to help with color selection and material sourcing so you can achieve
-          the perfect look without the hassle. Get in touch to discuss your decorating needs
-          and receive a free, no-obligation quote.
-        </p>
+<p className="text-[#a09e9e] text-center sm:text-left text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-4xl mx-auto px-4 sm:px-6">
+  Whether it’s refreshing a single room or giving your entire home a new look, I offer
+  professional decorating services to transform your space. From painting walls and ceilings
+  to wallpapering and woodwork finishes, every detail is handled with care and precision.
+  I use high-quality materials and techniques to ensure a smooth, long-lasting finish.
+  I’m also happy to help with color selection and material sourcing so you can achieve
+  the perfect look without the hassle. Get in touch to discuss your decorating needs
+  and receive a free, no-obligation quote.
+</p>
+
 
         <div className="space-y-12">
           {decoratingData.map((item, index) => (

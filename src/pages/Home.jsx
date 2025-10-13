@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect} from 'react'
 import { Link } from 'react-router-dom';
 import images from '../assets/images';
 import Form from '../components/Form';
@@ -23,6 +23,29 @@ import {
 
 
 const Home = () => {
+  const [loading, setLoading] = useState(true)
+    
+      useEffect(() => {
+        // Simulate data loading
+        const timer = setTimeout(() => {
+          setLoading(false)
+        }, 1000) // simulate 1 second loading
+    
+        return () => clearTimeout(timer)
+      }, [])
+    
+      if (loading) {
+        return (
+          <div className=" w-full flex flex-col justify-center items-center h-[200px]">
+            {/* Spinner */}
+            <div className="w-12 h-12 border-4 border-t-[#A55018] border-gray-300 rounded-full animate-spin"></div>
+            {/* Loading text */}
+            <p className="mt-4 text-[#A55018] text-lg font-semibold animate-pulse">
+              Loading...
+            </p>
+          </div>
+        )
+      }
   return (
     <>
       {/*  home next section */}
@@ -56,7 +79,7 @@ const Home = () => {
       <div className="flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-4 flex-wrap mb-16">
         <div
           className="flex items-center space-x-2 p-3 bg-neutral-600 rounded-full shadow-md transition duration-300 hover:bg-amber-600 cursor-pointer"
-          onClick={() => handleServiceClick("Quality")}
+          
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
@@ -67,7 +90,7 @@ const Home = () => {
 
         <div
           className="flex items-center space-x-2 p-3 bg-neutral-600 rounded-full shadow-md transition duration-300 hover:bg-amber-600 cursor-pointer"
-          onClick={() => handleServiceClick("Reliability")}
+        
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <circle cx="12" cy="12" r="10" />
@@ -78,7 +101,7 @@ const Home = () => {
 
         <div
           className="flex items-center space-x-2 p-3 bg-neutral-600 rounded-full shadow-md transition duration-300 hover:bg-amber-600 cursor-pointer"
-          onClick={() => handleServiceClick("Trust")}
+        
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M7 10v10l2-2h3a4 4 0 0 0 4-4V6a2 2 0 0 0-2-2h-3l-2.5 2.5a1.5 1.5 0 0 1-2.25 0z" />
@@ -89,7 +112,7 @@ const Home = () => {
 
         <div
           className="flex items-center space-x-2 p-3 bg-neutral-600 rounded-full shadow-md transition duration-300 hover:bg-amber-600 cursor-pointer"
-          onClick={() => handleServiceClick("Value")}
+          
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <line x1="12" y1="1" x2="12" y2="23" />
@@ -100,7 +123,7 @@ const Home = () => {
 
         <button
           className="ml-0 sm:ml-4 px-6 py-3 bg-amber-700 text-white font-bold rounded-lg shadow-lg hover:bg-amber-600 transition duration-200 uppercase tracking-widest text-sm"
-          onClick={() => handleServiceClick("Learn More")}
+         
         >
           Learn More
         </button>
@@ -110,7 +133,7 @@ const Home = () => {
     {/* Right Image */}
     <div className="w-full lg:w-1/4 flex justify-center lg:justify-end">
       <img
-        src={images.logo}
+        src={images.plumber2}
         alt="Right Worker"
         className="max-w-full h-auto object-contain rounded-lg shadow-lg"
       />
@@ -127,86 +150,127 @@ const Home = () => {
           {/* servives */}
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8">
   <Link to="/bathrooms">
-    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] transition-shadow duration-300" onClick={() => handleServiceClick("BATHROOMS")}>
+    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] cursor-pointer transition-shadow duration-300" >
       <FaBath className="text-2xl" />
       <span className="font-semibold text-lg">BATHROOMS</span>
     </button>
   </Link>
 
   <Link to="/odd-jobs">
-    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] transition-shadow duration-300" onClick={() => handleServiceClick("ODD JOBS")}>
+    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] cursor-pointer transition-shadow duration-300" >
       <FaTools className="text-2xl" />
       <span className="font-semibold text-lg">ODD JOBS</span>
     </button>
   </Link>
 
   <Link to="/decorating">
-    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] transition-shadow duration-300" onClick={() => handleServiceClick("DECORATING")}>
+    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] cursor-pointer transition-shadow duration-300" >
       <FaPaintRoller className="text-2xl" />
       <span className="font-semibold text-lg">DECORATING</span>
     </button>
   </Link>
 
-  <Link to="/kitchens">
-    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] transition-shadow duration-300" onClick={() => handleServiceClick("KITCHENS")}>
+  <Link to="/kitchen">
+    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] cursor-pointer transition-shadow duration-300" >
       <FaUtensils className="text-2xl" />
       <span className="font-semibold text-lg">KITCHENS</span>
     </button>
   </Link>
 
   <Link to="/tiling">
-    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] transition-shadow duration-300" onClick={() => handleServiceClick("TILING")}>
+    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] cursor-pointer transition-shadow duration-300">
       <FaThLarge className="text-2xl" />
       <span className="font-semibold text-lg">TILING</span>
     </button>
   </Link>
 
   <Link to="/repairs">
-    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] transition-shadow duration-300" onClick={() => handleServiceClick("REPAIRS")}>
+    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] cursor-pointer transition-shadow duration-300" >
       <FaWrench className="text-2xl" />
       <span className="font-semibold text-lg">REPAIRS</span>
     </button>
   </Link>
 
   <Link to="/electrical">
-    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] transition-shadow duration-300" onClick={() => handleServiceClick("ELECTRICAL")}>
+    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] cursor-pointer transition-shadow duration-300">
       <FaPlug className="text-2xl" />
       <span className="font-semibold text-lg">ELECTRICAL</span>
     </button>
   </Link>
 
   <Link to="/plumbing">
-    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] transition-shadow duration-300" onClick={() => handleServiceClick("PLUMBING")}>
+    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] cursor-pointer transition-shadow duration-300">
       <FaTint className="text-2xl" />
       <span className="font-semibold text-lg">PLUMBING</span>
     </button>
   </Link>
 
-  <Link to="/gardens">
-    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] transition-shadow duration-300" onClick={() => handleServiceClick("GARDENS")}>
+  <Link to="/gardening">
+    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] cursor-pointer transition-shadow duration-300" >
       <FaSeedling className="text-2xl" />
       <span className="font-semibold text-lg">GARDENS</span>
     </button>
   </Link>
 
   <Link to="/flooring">
-    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] transition-shadow duration-300" onClick={() => handleServiceClick("FLOORING")}>
+    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] cursor-pointer transition-shadow duration-300" >
       <FaRulerCombined className="text-2xl" />
       <span className="font-semibold text-lg">FLOORING</span>
     </button>
   </Link>
 
   <Link to="/plastering">
-    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] transition-shadow duration-300" onClick={() => handleServiceClick("PLASTERING")}>
+    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] cursor-pointer transition-shadow duration-300">
       <FaFillDrip className="text-2xl" />
       <span className="font-semibold text-lg">PLASTERING</span>
     </button>
   </Link>
 
   <Link to="/carpentry">
-    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-amber-700 transition-shadow duration-300" onClick={() => handleServiceClick("CARPENTRY")}>
+    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] cursor-pointer transition-shadow duration-300" >
       <FaHammer className="text-2xl" />
       <span className="font-semibold text-lg">CARPENTRY</span>
+    </button>
+  </Link>
+
+   <Link to="/flat-packing">
+    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#493508] cursor-pointer transition-shadow duration-300">
+      <FaHammer className="text-2xl" />
+      <span className="font-semibold text-lg">Flat Packing</span>
+    </button>
+  </Link>
+   <Link to="/tv-mount">
+    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#493508] cursor-pointer transition-shadow duration-300" >
+      <FaHammer className="text-2xl" />
+      <span className="font-semibold text-lg">TV Mount</span>
+    </button>
+  </Link>
+
+   <Link to="/painting">
+    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#493508] cursor-pointer transition-shadow duration-300" >
+      <FaHammer className="text-2xl" />
+      <span className="font-semibold text-lg">Painting</span>
+    </button>
+  </Link>
+
+   <Link to="/wall-paper">
+    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#493508] cursor-pointer transition-shadow duration-300" >
+      <FaHammer className="text-2xl" />
+      <span className="font-semibold text-lg">Wall Paper</span>
+    </button>
+  </Link>
+
+  <Link to="/joinery">
+    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#493508] cursor-pointer transition-shadow duration-300">
+      <FaHammer className="text-2xl" />
+      <span className="font-semibold text-lg">Joinery</span>
+    </button>
+  </Link>
+
+  <Link to="/fencing">
+    <button className="flex items-center space-x-3 p-5 h-24 w-full sm:w-72 rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#493508] cursor-pointer transition-shadow duration-300" >
+      <FaHammer className="text-2xl" />
+      <span className="font-semibold text-lg">Fencing</span>
     </button>
   </Link>
 </div>
@@ -344,55 +408,9 @@ const Home = () => {
             
         </div>
 
-        <Form />
 
 
-{/* home last section */}
-   <div className="h-auto bg-gray-700 p-8 flex flex-col items-center justify-center">
-      
-      {/* Container for the reCAPTCHA box and Send button */}
-      <div className="mb-8 flex items-start space-x-4">
-        
-        {/* The reCAPTCHA/Verification Box */}
-        <div className="bg-white p-2 border-2 border-red-500 rounded shadow-lg w-72 relative">
-          
-          {/* Red error message at the top */}
-          <p className="text-red-600 text-sm mb-2 font-sans">
-            Verification challenge expired. Check the checkbox again.
-          </p>
-          
-          {/* Checkbox and "I'm not a robot" text */}
-          <div className="flex items-center space-x-2">
-            <div className="w-5 h-5 border-2 border-red-500 bg-white flex items-center justify-center">
-              {/* This is the red square outline for the checkbox */}
-            </div>
-            <span className="text-gray-800 text-base">I'm not a robot</span>
-            
-            {/* The reCAPTCHA logo/image container */}
-            <div className="ml-auto flex flex-col items-center">
-              {/* A placeholder for the reCAPTCHA image */}
-              <div className="w-10 h-10 bg-purple-200 border border-gray-300 rounded-sm mb-1">
-                {/* Placeholder for the abstract image */}
-              </div>
-              <span className="text-xs text-gray-500">reCAPTCHA</span>
-              <span className="text-xs text-blue-500 cursor-pointer">Privacy - Terms</span>
-            </div>
-          </div>
-        </div>
-        
-        {/* Send Button */}
-        <button className="bg-gray-800 text-gray-400 font-semibold py-2 px-6 rounded shadow-md hover:bg-gray-900 transition duration-150 mt-1">
-          Send
-        </button>
-      </div>
-      
-      {/* --- Buttons Section --- */}
 
-      {/* Back to Top Button */}
-      <button className="bg-gradient-to-t from-yellow-700 to-yellow-800 text-white font-bold py-3 px-12 rounded shadow-2xl hover:opacity-90 transition duration-150 mb-8">
-        Back to Top
-      </button>   
-    </div>
     </>
   )
 }

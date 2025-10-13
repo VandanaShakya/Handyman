@@ -1,11 +1,34 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { cards } from './serviceData'
 import { motion } from 'framer-motion'
 
-
 const Bathroom = () => {
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    // Simulate data loading
+    const timer = setTimeout(() => {
+      setLoading(false)
+    }, 1000) // simulate 1 second loading
+
+    return () => clearTimeout(timer)
+  }, [])
+
+  if (loading) {
+    return (
+      <div className=" absolute t-10 w-full flex flex-col justify-center items-center h-screen bg-[#404040]">
+        {/* Spinner */}
+        <div className="w-12 h-12 border-4 border-t-[#A55018] border-gray-300 rounded-full animate-spin"></div>
+        {/* Loading text */}
+        <p className="mt-4 text-[#A55018] text-lg font-semibold animate-pulse">
+          Loading...
+        </p>
+      </div>
+    )
+  }
+
   return (
-     <div className="bg-[#404040]">
+    <div className="bg-[#404040]">
       <div className="max-w-6xl mx-auto p-6">
         
         {/* Heading */}
@@ -74,4 +97,4 @@ const Bathroom = () => {
   )
 }
 
-export default Bathroom 
+export default Bathroom
