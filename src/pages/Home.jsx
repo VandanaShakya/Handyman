@@ -199,7 +199,7 @@ const Home = () => {
                             onError={(e) => {
                                 // Fallback logic if the image URL is broken
                                 e.target.style.display = 'none'; 
-                                e.target.parentElement.innerHTML = '<div class="flex items-center justify-center w-full h-full text-sm font-semibold text-amber-500 bg-neutral-600 rounded-lg p-4 h-48 sm:h-64">Image Slot Ready (Insert URL)</div>';
+                                e.target.parentElement.innerHTML = '<div class="flex items-center justify-center w-full  text-sm font-semibold text-amber-500 bg-neutral-600 rounded-lg p-4 h-48 sm:h-64">Image Slot Ready (Insert URL)</div>';
                             }}
                         />
                     </div>
@@ -213,7 +213,7 @@ const Home = () => {
                             className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-inner"
                             onError={(e) => {
                                 e.target.style.display = 'none'; 
-                                e.target.parentElement.innerHTML = '<div class="flex items-center justify-center w-full h-full text-sm font-semibold text-amber-500 bg-neutral-600 rounded-lg p-4 h-48 sm:h-64">Image Slot Ready (Insert URL)</div>';
+                                e.target.parentElement.innerHTML = '<div class="flex items-center justify-center w-full  text-sm font-semibold text-amber-500 bg-neutral-600 rounded-lg p-4 h-48 sm:h-64">Image Slot Ready (Insert URL)</div>';
                             }}
                         />
                     </div>
@@ -227,7 +227,7 @@ const Home = () => {
                             className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-inner"
                             onError={(e) => {
                                 e.target.style.display = 'none'; 
-                                e.target.parentElement.innerHTML = '<div class="flex items-center justify-center w-full h-full text-sm font-semibold text-amber-500 bg-neutral-600 rounded-lg p-4 h-48 sm:h-64">Image Slot Ready (Insert URL)</div>';
+                                e.target.parentElement.innerHTML = '<div class="flex items-center justify-center w-full  text-sm font-semibold text-amber-500 bg-neutral-600 rounded-lg p-4 h-48 sm:h-64">Image Slot Ready (Insert URL)</div>';
                             }}
                         />
                     </div>
@@ -241,7 +241,7 @@ const Home = () => {
                             className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-inner"
                             onError={(e) => {
                                 e.target.style.display = 'none'; 
-                                e.target.parentElement.innerHTML = '<div class="flex items-center justify-center w-full h-full text-sm font-semibold text-amber-500 bg-neutral-600 rounded-lg p-4 h-48 sm:h-64">Image Slot Ready (Insert URL)</div>';
+                                e.target.parentElement.innerHTML = '<div class="flex items-center justify-center w-full text-sm font-semibold text-amber-500 bg-neutral-600 rounded-lg p-4 h-48 sm:h-64">Image Slot Ready (Insert URL)</div>';
                             }}
                         />
                     </div>
@@ -255,7 +255,7 @@ const Home = () => {
                             className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-inner"
                             onError={(e) => {
                                 e.target.style.display = 'none'; 
-                                e.target.parentElement.innerHTML = '<div class="flex items-center justify-center w-full h-full text-sm font-semibold text-amber-500 bg-neutral-600 rounded-lg p-4 h-48 sm:h-64">Image Slot Ready (Insert URL)</div>';
+                                e.target.parentElement.innerHTML = '<div class="flex items-center justify-center w-full   text-sm font-semibold text-amber-500 bg-neutral-600 rounded-lg p-4 h-48 sm:h-64">Image Slot Ready (Insert URL)</div>';
                             }}
                         />
                     </div>
@@ -269,7 +269,7 @@ const Home = () => {
                             className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-inner"
                             onError={(e) => {
                                 e.target.style.display = 'none'; 
-                                e.target.parentElement.innerHTML = '<div class="flex items-center justify-center w-full h-full text-sm font-semibold text-amber-500 bg-neutral-600 rounded-lg p-4 h-48 sm:h-64">Image Slot Ready (Insert URL)</div>';
+                                e.target.parentElement.innerHTML = '<div class="flex items-center justify-center w-full   text-sm font-semibold text-amber-500 bg-neutral-600 rounded-lg p-4 h-48 sm:h-64">Image Slot Ready (Insert URL)</div>';
                             }}
                         />
                     </div>
