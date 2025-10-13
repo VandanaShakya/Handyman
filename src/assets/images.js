@@ -53,12 +53,12 @@ import tiling9 from './services/tiling9.webp'
 
 
 // kitchen //
-import kitchen1 from './services/Kitchen1.webp'
-import kitchen2 from './services/Kitchen2.jpg'
-import kitchen3 from './services/Kitchen3.webp'
-import kitchen4 from './services/Kitchen4.avif'
-import kitchen5 from './services/Kitchen5.jpg'
-import kitchen6 from './services/Kitchen6.jpg'
+import kitchen1 from './services/kitchen1.webp'
+import kitchen2 from './services/kitchen2.jpg'
+import kitchen3 from './services/kitchen3.webp'
+import kitchen4 from './services/kitchen4.avif'
+import kitchen5 from './services/kitchen5.jpg'
+import kitchen6 from './services/kitchen6.jpg'
 
 
 // plumbing //
