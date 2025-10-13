@@ -15,11 +15,11 @@ import plumber2 from './home/plumber2.jpg'
 
 
 // services //
-import bathroom1 from './services/Bathroom1.webp'
-import bathroom2 from './services/Bathroom2.webp'
-import bathroom3 from './services/Bathroom3.jpg'
-import bathroom4 from './services/Bathroom4.jpeg'
-import bathroom5 from './services/Bathroom5.webp'
+import bathroom1 from './services/bathroom1.webp'
+import bathroom2 from './services/bathroom2.webp'
+import bathroom3 from './services/bathroom3.jpg'
+import bathroom4 from './services/bathroom4.jpeg'
+import bathroom5 from './services/bathroom5.webp'
 import bathroom6 from './services/bathroom6.jpg'
 
 // odd images //
