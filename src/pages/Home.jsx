@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import images from '../assets/images';
 import Form from '../components/Form';
 import { services } from './mainPagesData.jsx';
+import Map from '../components/Map.jsx';
 
 
 
@@ -37,17 +38,8 @@ const Home = () => {
       <div className="h-auto bg-neutral-700 font-sans text-white p-4 sm:p-8 md:p-12 relative overflow-hidden">
   <div className="relative max-w-6xl mx-auto pt-10 pb-16 flex flex-col lg:flex-row items-center justify-between gap-8">
 
-    {/* Left Image */}
-    <div className="w-full lg:w-1/4 flex justify-center lg:justify-start">
-      <img
-        src={images.plumber1}
-        alt="Left Worker"
-        className="max-w-full h-auto object-contain rounded-lg shadow-lg"
-      />
-    </div>
-
     {/* Text Content */}
-    <div className="w-full lg:w-2/4 text-center lg:text-left">
+    <div className="w-full text-center lg:text-center">
     <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 uppercase tracking-wider text-amber-500">
   My Mission
 </h1>
@@ -57,11 +49,11 @@ const Home = () => {
 </p>
 
 <p className="text-base text-slate-300 max-w-2xl mx-auto mb-8">
-  Serving South Manchester and surrounding areas, HomeWorks Handyman Services offers a fresh and trustworthy approach to hiring a tradesman. My commitment is to provide prompt, skilled, and dependable solutions that meet your needs efficiently and effectively.
-</p>
+Serving South Manchester and nearby areas, B1 Handyman delivers a dependable and professional approach to home repairs and maintenance.
+I’m dedicated to providing prompt, skilled, and reliable solutions — ensuring every job is completed efficiently, safely, and to the highest standard.</p>
 
 
-      <div className="flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-4 flex-wrap mb-16">
+      <div className="flex flex-col sm:flex-row justify-center items-center gap-4 flex-wrap mb-16">
         <div
           className="flex items-center space-x-2 p-3 bg-neutral-600 rounded-full shadow-md transition duration-300 hover:bg-amber-600 cursor-pointer"
           
@@ -106,28 +98,22 @@ const Home = () => {
           <span className="font-medium text-sm whitespace-nowrap">Value</span>
         </div>
 
-        <button
-          className="ml-0 sm:ml-4 px-6 py-3 bg-amber-700 text-white font-bold rounded-lg shadow-lg hover:bg-amber-600 transition duration-200 uppercase tracking-widest text-sm"
-         
-        >
-          Learn More
-        </button>
       </div>
     </div>
 
     {/* Right Image */}
-    <div className="w-full lg:w-1/4 flex justify-center lg:justify-end">
+    {/* <div className="w-full lg:w-1/4 flex justify-center lg:justify-end">
       <img
         src={images.plumber2}
         alt="Right Worker"
         className="max-w-full h-auto object-contain rounded-lg shadow-lg"
       />
-    </div>
+    </div> */}
 
   </div>
 </div>
 
-<div className="max-w-6xl mx-auto mt-12 pt-8 border-t border-neutral-600 px-4 sm:px-6 lg:px-8">
+<div className="max-w-6xl mx-auto border-t border-neutral-600 px-1 ">
   <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center m-2 uppercase tracking-wider text-amber-700">
     Services I Offer
   </h2>
@@ -193,7 +179,7 @@ const Home = () => {
                     <div className="bg-neutral-800 p-2 rounded-xl shadow-2xl transition duration-300 hover:ring-4 hover:ring-amber-500/50">
                         {/* USER ACTION REQUIRED: Replace the 'src' below with your actual image URL. */}
                         <img 
-                            src={images.blocksImg} 
+                            src={images.homepic1} 
                             alt="Custom wooden shelves installed in a stairwell" 
                             className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-inner"
                             onError={(e) => {
@@ -208,7 +194,7 @@ const Home = () => {
                     <div className="bg-neutral-800 p-2 rounded-xl shadow-2xl transition duration-300 hover:ring-4 hover:ring-amber-500/50">
                         {/* USER ACTION REQUIRED: Replace the 'src' below with your actual image URL. */}
                         <img 
-                            src={images.doorImg} 
+                            src={images.homepic2} 
                             alt="Tiled bathroom wall with a new shower fixture" 
                             className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-inner"
                             onError={(e) => {
@@ -222,7 +208,7 @@ const Home = () => {
                     <div className="bg-neutral-800 p-2 rounded-xl shadow-2xl transition duration-300 hover:ring-4 hover:ring-amber-500/50">
                         {/* USER ACTION REQUIRED: Replace the 'src' below with your actual image URL. */}
                         <img 
-                            src={images.greelImg} 
+                            src={images.homepic3} 
                             alt="Freshly painted white picket fence and gate installation" 
                             className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-inner"
                             onError={(e) => {
@@ -236,7 +222,7 @@ const Home = () => {
                     <div className="bg-neutral-800 p-2 rounded-xl shadow-2xl transition duration-300 hover:ring-4 hover:ring-amber-500/50">
                         {/* USER ACTION REQUIRED: Replace the 'src' below with your actual image URL. */}
                         <img 
-                            src={images.houseImg} 
+                            src={images.homepic4} 
                             alt="Brickwork repair near a window on a residential building" 
                             className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-inner"
                             onError={(e) => {
@@ -250,7 +236,7 @@ const Home = () => {
                     <div className="bg-neutral-800 p-2 rounded-xl shadow-2xl transition duration-300 hover:ring-4 hover:ring-amber-500/50">
                         {/* USER ACTION REQUIRED: Replace the 'src' below with your actual image URL. */}
                         <img 
-                            src={images.showerImg} 
+                            src={images.homepic5} 
                             alt="Exterior view of a newly serviced brick home with clean windows" 
                             className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-inner"
                             onError={(e) => {
@@ -264,7 +250,7 @@ const Home = () => {
                     <div className="bg-neutral-800 p-2 rounded-xl shadow-2xl transition duration-300 hover:ring-4 hover:ring-amber-500/50">
                         {/* USER ACTION REQUIRED: Replace the 'src' below with your actual image URL. */}
                         <img 
-                            src={images.tilesImg} 
+                            src={images.homepic6} 
                             alt="Wooden door stripped and prepped for refinishing" 
                             className="w-full h-48 sm:h-64 object-cover rounded-lg shadow-inner"
                             onError={(e) => {
@@ -276,17 +262,7 @@ const Home = () => {
 
                 </div>
                 
-                {/* Social Feed Placeholder Block */}
-                <div className="mt-16 mb-8 flex justify-center">
-                    <div className="w-full max-w-lg p-6 bg-neutral-800 border-2 border-amber-600 rounded-lg text-center shadow-xl">
-                        <p className="text-sm text-slate-400">
-                            <span className="font-bold text-lg">🌐 POWR</span>
-                        </p>
-                        <p className="text-base font-semibold mt-1">
-                            Social Feed - Create your own for free!
-                        </p>
-                    </div>
-                </div>
+               
                 
                 {/* Optional: Separator for next section (if there was one) */}
                 <div className="w-3/4 h-px mx-auto bg-neutral-600 mt-16"></div>
@@ -294,6 +270,11 @@ const Home = () => {
             </div>
             
         </div>
+<div className="bg-[#404040] py-12 px-4">
+  <div className="max-w-7xl mx-auto w-full">
+    <Map />
+  </div>
+</div>
 
 
 

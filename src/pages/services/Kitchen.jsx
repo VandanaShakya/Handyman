@@ -58,9 +58,7 @@ const [loading, setLoading] = useState(true)
               backgroundPosition: "center",
             }}
           >
-            {/* Dark overlay */}
-            <div className="absolute inset-0 bg-black opacity-60"></div>
-
+          
             {/* Content */}
             <div className="relative p-6 flex flex-col justify-end h-full">
               <h3 className="text-2xl font-bold mb-2">{card.title}</h3>

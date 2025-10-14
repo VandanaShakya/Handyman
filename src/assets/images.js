@@ -4,12 +4,14 @@ import masterManchesterImg from './home/master-manchester.avif';
 import logo from './home/logo.png';
 import heroLeftImg from './home/herodataimg.png'
 import heroLine from './home/heroline.avif'
-import blocksImg from './home/blocks.jpg'
-import doorImg from './home/door.jpg'
-import greelImg from './home/greel.webp'
-import showerImg from './home/shower.jpg'
-import tilesImg from './home/tiles.jpg'
-import houseImg from './home/house.webp'
+
+import homepic1 from './home/homepic1.webp'
+import homepic2 from './home/homepic2.webp'
+import homepic3 from './home/homepic3.webp'
+import homepic4 from './home/homepic4.webp'
+import homepic5 from './home/homepic5.webp'
+import homepic6 from './home/homepic6.jpg'
+
 import plumber1 from './home/plumber1.jpg'
 import plumber2 from './home/plumber2.jpg'
 
@@ -17,61 +19,61 @@ import plumber2 from './home/plumber2.jpg'
 // services //
 import bathroom1 from './services/bathroom1.webp'
 import bathroom2 from './services/bathroom2.webp'
-import bathroom3 from './services/bathroom3.jpg'
-import bathroom4 from './services/bathroom4.jpeg'
+import bathroom3 from './services/bathroom3.webp'
+import bathroom4 from './services/bathroom4.webp'
 import bathroom5 from './services/bathroom5.webp'
 import bathroom6 from './services/bathroom6.jpg'
 
 // odd images //
-import odd1 from './services/odd1.jpg'
-import odd2 from './services/odd2.webp'
-import odd3 from './services/odd3.jpg'
-import odd4 from './services/odd4.jpg'
+import odd1 from './services/odd1.webp'
+import odd2 from './services/odd4.webp'
+import odd3 from './services/odd3.webp'
+import odd4 from './services/odd2.webp'
 import odd5 from './services/odd5.webp'
 import odd6 from './services/odd6.webp'
 
 
 // decorating //
-import decorating1 from './services/decorating1.jpg'
-import decorating2 from './services/decorating2.jpg'
-import decorating3 from './services/decorating3.jpg'
-import decorating4 from './services/decorating4.jpg'
-import decorating5 from './services/decorating5.avif'
+import decorating1 from './services/decorating1.webp'
+import decorating2 from './services/decorating2.webp'
+import decorating3 from './services/decorating3.webp'
+import decorating4 from './services/decorating4.webp'
+import decorating5 from './services/decorating5.webp'
 import decorating6 from './services/decorating6.webp'
 
 
 // tiling //
-import tiling1 from './services/tiling1.jpg'
+import tiling1 from './services/tiling1.webp'
 import tiling2 from './services/tiling2.webp'
-import tiling3 from './services/tiling3.jpg'
-import tiling4 from './services/tiling4.jpg'
-import tiling5 from './services/tiling5.jpg'
-import tiling6 from './services/tiling6.jpg'
-import tiling7 from './services/tiling7.jpg'
-import tiling8 from './services/tiling8.jpg'
+import tiling3 from './services/tiling3.webp'
+import tiling4 from './services/tiling4.webp'
+import tiling5 from './services/tiling5.webp'
+import tiling6 from './services/tiling6.webp'
+import tiling7 from './services/tiling7.webp'
+import tiling8 from './services/tiling8.webp'
 import tiling9 from './services/tiling9.webp'
 
 
 // kitchen //
 import kitchen1 from './services/kitchen1.webp'
-import kitchen2 from './services/kitchen2.jpg'
+import kitchen2 from './services/kitchen2.webp'
 import kitchen3 from './services/kitchen3.webp'
-import kitchen4 from './services/kitchen4.avif'
-import kitchen5 from './services/kitchen5.jpg'
-import kitchen6 from './services/kitchen6.jpg'
+import kitchen4 from './services/kitchen4.webp'
+import kitchen5 from './services/kitchen5.webp'
+import kitchen6 from './services/kitchen6.webp'
 
 
 // plumbing //
-import plumbing1 from './services/plumbing1.jpg'
-import plumbing2 from './services/plumbing2.jpg'
-import plumbing3 from './services/plumbing3.jpg'
-import plumbing4 from './services/plumbing4.jpg'
-import plumbing5 from './services/plumbing5.jpg'
+import plumbing1 from './services/plumbing1.webp'
+import plumbing2 from './services/plumbing2.webp'
+import plumbing3 from './services/plumbing3.webp'
+import plumbing4 from './services/plumbing4.webp'
+import plumbing5 from './services/plumbing5.webp'
 import plumbing6 from './services/plumbing6.webp'
 
 
 // electrical //
-import electrical1 from './services/electrical1.jpg'
+import electrical1 from './services/electrical1.webp'
 import electrical2 from './services/electrical2.webp'
 import electrical3 from './services/Electrical3.webp'
 import electrical4 from './services/Electrical4.webp'
@@ -79,72 +81,72 @@ import electrical5 from './services/electrical5.webp'
 
 // carpentry //
 import carpentry1 from './services/carpentry1.webp'
-import carpentry2 from './services/carpentry2.jpeg'
-import carpentry3 from './services/carpentry3.jpg'
-import carpentry4 from './services/carpentry4.jpg'
-import carpentry5 from './services/carpentry5.jpg'
-import carpentry6 from './services/carpentry6.jpg'
+import carpentry2 from './services/carpentry2.webp'
+import carpentry3 from './services/carpentry3.webp'
+import carpentry4 from './services/carpentry4.webp'
+import carpentry5 from './services/carpentry5.webp'
+import carpentry6 from './services/carpentry6.webp'
 
 // gardening //
-import gardening1 from './services/gardening1.jpg'
-import gardening2 from './services/gardening2.jpg'
-import gardening3 from './services/gardening3.png'
-import gardening4 from './services/gardening4.jpeg'
-import gardening5 from './services/gardening5.jpg'
-import gardening6 from './services/gardening6.png'
-import gardening7 from './services/gardening7.jpg'
-import gardening8 from './services/gardening8.jpeg'
+import gardening1 from './services/gardening1.webp'
+import gardening2 from './services/gardening2.webp'
+import gardening3 from './services/gardening3.webp'
+import gardening4 from './services/gardening4.webp'
+import gardening5 from './services/gardening5.webp'
+import gardening6 from './services/gardening6.webp'
+import gardening7 from './services/gardening7.webp'
+import gardening8 from './services/gardening8.webp'
 import gardening9 from './services/gardening9.webp'
 
 
 // roofing //
-import roofing1 from './services/roofing1.png'
-import roofing2 from './services/roofing2.png'
-import roofing3 from './services/roofing3.png'
-import roofing4 from './services/roofing4.avif'
-import roofing5 from './services/roofing5.jpg'
-import roofing6 from './services/roofing6.jpg'
+import roofing1 from './services/roofing1.webp'
+import roofing2 from './services/roofing2.webp'
+import roofing3 from './services/roofing3.webp'
+import roofing4 from './services/roofing4.webp'
+import roofing5 from './services/roofing5.webp'
+import roofing6 from './services/roofing6.webp'
 
 
 // tv mount //
-import tvMount1 from './services/tvmount1.jpg'
-import tvMount2 from './services/tvmount2.jpg'
-import tvMount3 from './services/tvmount3.jpg'
+import tvMount1 from './services/tvmount1.webp'
+import tvMount2 from './services/tvmount2.webp'
+import tvMount3 from './services/tvmount3.webp'
 import tvMount4 from './services/tvmount4.webp'
 import tvMount5 from './services/tvmount5.jpg'
 
 
 // painting //
-import painting1 from './services/painting1.jpg'
-import painting2 from './services/painting2.jpg'
-import painting3 from './services/painting3.png'
+import painting1 from './services/painting1.webp'
+import painting2 from './services/painting2.webp'
+import painting3 from './services/painting3.webp'
 import painting4 from './services/painting4.webp'
 import painting5 from './services/painting5.webp'
-import painting6 from './services/painting6.webp'
-import painting7 from './services/painting7.png'
-import painting8 from './services/painting8.jpg'
-import painting9 from './services/painting9.jpg'
+import painting6 from './services/painting6.jpg'
+import painting7 from './services/painting7.webp'
+import painting8 from './services/painting8.webp'
+import painting9 from './services/painting9.webp'
 
 
 // wall paper //
-import wallPaper1 from './services/wallpaper1.jpg'
-import wallPaper2 from './services/wallpaper2.png'
-import wallPaper3 from './services/wallpaper3.webp'
+import wallPaper1 from './services/wallpaper1.webp'
+import wallPaper2 from './services/wallpaper2.jpeg'
+import wallPaper3 from './services/wallpaper3.jpg'
 import wallPaper4 from './services/wallpaper4.jpg'
-import wallPaper5 from './services/wallpaper5.png'
-import wallPaper6 from './services/wallpaper6.png'
+import wallPaper5 from './services/wallpaper5.jpg'
+import wallPaper6 from './services/wallpaper6.webp'
 
 
 // joinery //
 import joinery1 from './services/joinery1.webp'
-import joinery2 from './services/joinery2.jpg'
+import joinery2 from './services/joinery2.webp'
 import joinery3 from './services/joinery3.webp'
-import joinery4 from './services/joinery4.jpg'
-import joinery5 from './services/joinery5.jpg'
+import joinery4 from './services/joinery4.webp'
+import joinery5 from './services/joinery5.webp'
 import joinery6 from './services/joinery6.webp'
 import joinery7 from './services/joinery7.webp'
-import joinery8 from './services/joinery8.png'
-import joinery9 from './services/joinery9.jpg'
+import joinery8 from './services/joinery8.webp'
+import joinery9 from './services/joinery9.webp'
 
 
 // fencing //
@@ -157,24 +159,44 @@ import fencing6 from './services/fencing6.webp'
 
 
 // import plastering images //
-import plastering1 from './services/plastering1.png'
-import plastering2 from './services/plastering2.png'
-import plastering3 from './services/plastering3.jpg'
-import plastering4 from './services/plastering4.jpg'
-import plastering5 from './services/plastering5.jpg'
-import plastering6 from './services/plastering6.png'
+import plastering1 from './services/plastering1.webp'
+import plastering2 from './services/plastering2.webp'
+import plastering3 from './services/plastering3.webp'
+import plastering4 from './services/plastering4.webp'
+import plastering5 from './services/plastering5.webp'
+import plastering6 from './services/plastering6.webp'
 import plastering7 from './services/plastering7.jpg'
-import plastering8 from './services/plastering8.jpg'
-import plastering9 from './services/plastering9.webp'
+import plastering8 from './services/plastering8.webp'
+import plastering9 from './services/plastering9.png'
 
 
 
 // flooring //
-import flooring1 from './services/flooring1.jpg'
-import flooring2 from './services/flooring2.jpg'
-import flooring3 from './services/flooring3.png'
-import flooring4 from './services/flooring4.jpg'
+import flooring1 from './services/flooring1.webp'
+import flooring2 from './services/flooring2.webp'
+import flooring3 from './services/flooring3.webp'
+import flooring4 from './services/flooring4.webp'
 import flooring5 from './services/flooring5.webp'
+
+// flat pcking //
+import flatpacking1 from './services/flatpacking1.webp'
+import flatpacking2 from './services/flatpacking2.webp'
+import flatpacking3 from './services/flatpacking3.webp'
+import flatpacking4 from './services/flatpacking4.webp'
+import flatpacking5 from './services/flatpacking5.webp'
+import flatpacking6 from './services/flatpacking5.webp'
+
+
+// repair //
+import repair1 from './services/repair1.webp'
+import repair2 from './services/repair2.webp'
+import repair3 from './services/repair3.webp'
+import repair4 from './services/repair4.webp'
+import repair5 from './services/repair5.webp'
+import repair6 from './services/repair5.webp'
+import repair7 from './services/repair7.webp'
+import repair8 from './services/repair8.webp'
+
 
 // conatct us //
 import contactusImg from './home/contactus.webp'
@@ -186,12 +208,13 @@ const images = {
     logo,
     heroLeftImg,
     heroLine,
-    blocksImg,
-    doorImg,
-    greelImg,
-    showerImg,
-    tilesImg,
-    houseImg,
+
+    homepic1,
+    homepic2,
+    homepic3,
+    homepic4,
+    homepic5,
+    homepic6,
     plumber1,
     plumber2,
 
@@ -355,6 +378,27 @@ const images = {
     flooring4,
     flooring5,
 
+
+
+    // flat packing //
+    flatpacking1,
+    flatpacking2,
+    flatpacking3,
+    flatpacking4,
+    flatpacking5,
+    flatpacking6,
+
+
+
+    // repair //
+    repair1,
+    repair2,
+    repair3,
+    repair4,
+    repair5,
+    repair6,
+    repair7,
+    repair8,
 
     // conatct us //
     contactusImg,

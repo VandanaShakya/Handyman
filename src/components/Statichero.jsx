@@ -37,7 +37,7 @@ const Statichero = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
     >
-      HomeWorks GB
+     B1 Handyman
     </motion.h1>
 
     {/* Yellow Horizontal Line */}
@@ -55,7 +55,7 @@ const Statichero = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
     >
-      Your Local Chorlton Handyman
+      Your Local Bradford, West Yorkshire and <br/> nearby areas Handyman
     </motion.h1>
 
     {/* Hero Left Image */}
@@ -68,34 +68,11 @@ const Statichero = () => {
       <img
         src={images.heroLeftImg}
         alt="Hero Left"
-        className="max-w-full w-[90%] sm:w-[85%] md:w-[80%] lg:w-[75%] rounded-lg shadow-lg"
+        className="max-w-full w-[90%] sm:w-[85%] md:w-[80%] lg:w-[75%] rounded-lg"
       />
     </motion.div>
 
-    {/* Badges */}
-    <motion.div
-      className="flex flex-wrap justify-center items-center gap-4 mt-4"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, ease: "easeOut", delay: 0.7 }}
-    >
-      {[images.excellenceImg, images.masterManchesterImg, images.handymanImg].map(
-        (imgSrc, index) => (
-          <div key={index} className="flex justify-center">
-            <img
-              src={imgSrc}
-              alt={`Badge ${index + 1}`}
-              className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-36 xl:h-36 object-contain rounded-full transition-transform hover:scale-105 duration-300"
-              onError={(e) => {
-                e.target.onerror = null;
-                e.target.src =
-                  "https://placehold.co/120x120/999999/FFFFFF?text=Logo%20Error";
-              }}
-            />
-          </div>
-        )
-      )}
-    </motion.div>
+    
   </div>
 </motion.div>
 

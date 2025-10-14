@@ -42,11 +42,9 @@ const Myblog = () => {
     {/* Heading Section */}
     <div className="text-center">
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#A55018] mb-4">
-        HandyPro Blog
+        B1 Handyman Blog
       </h2>
-      <p className="mx-auto text-base sm:text-lg md:text-xl text-[#afafaf] leading-relaxed max-w-4xl">
-        At HandyPro, we provide expert guidance, practical solutions, and inspiration for all aspects of home improvement, repairs, and maintenance. Based in Bradford, our services extend across West Yorkshire and surrounding areas, and for larger projects, we can travel further to meet your needs. We specialise in reliable, responsive support for care homes, including children’s residential care homes (Ofsted regulated) and adult residential care homes (CQC regulated). We understand the critical importance of timely repairs, rigorous health and safety standards, and compliance with regulatory requirements, ensuring safe, well-maintained environments for residents, staff, and visitors alike. By delivering a professional, respectful, and efficient service, we help care homes maintain compliance while creating safe, comfortable, and welcoming spaces for everyone in their care.
-      </p>
+      
     </div>
 
     {/* Units */}
