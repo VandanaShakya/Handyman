@@ -36,7 +36,7 @@ const Home = () => {
       {/*  home next section */}
       <div className="min-h-screen bg-neutral-700 font-sans text-white p-4 sm:p-8 md:p-12 relative overflow-hidden">
       <div className="h-auto bg-neutral-700 font-sans text-white p-4 sm:p-8 md:p-12 relative overflow-hidden">
-  <div className="relative max-w-6xl mx-auto pt-10 pb-16 flex flex-col lg:flex-row items-center justify-between gap-8">
+  <div className="relative max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-8">
 
     {/* Text Content */}
     <div className="w-full text-center lg:text-center">
@@ -125,22 +125,36 @@ I’m dedicated to providing prompt, skilled, and reliable solutions — ensurin
   </p>
 
   {/* Services Grid */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-    {services.map((service, idx) => {
-      const Icon = service.icon;
-      return (
-        <div key={idx} className="flex flex-col items-center text-center">
-          <Link to={service.link} className="w-full">
-            <button className="flex flex-col sm:flex-row items-center sm:space-x-3 justify-center p-4 sm:p-5 h-28 sm:h-24 w-full rounded-xl bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] cursor-pointer transition-all duration-300">
-              <Icon className="text-3xl sm:text-2xl mb-2 sm:mb-0" />
-              <span className="font-semibold text-lg">{service.title}</span>
-            </button>
-          </Link>
-        
-        </div>
-      );
-    })}
-  </div>
+ <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+  {services.map((service, idx) => {
+    const Icon = service.icon;
+    return (
+   <div key={idx} className="flex flex-col items-center text-center">
+  <Link to={service.link} className="w-full">
+    <button
+      className="flex items-center p-5 w-full h-28 rounded-xl 
+                 bg-[#493508] text-white shadow-xl hover:bg-[#4b3a13] 
+                 cursor-pointer transition-all duration-300"
+    >
+      {/* Icon on the Left */}
+      <Icon className="text-4xl sm:text-3xl text-[#d47304] flex-shrink-0" />
+
+      {/* Description in the Center */}
+      <div className="flex text-center px-4">
+        <p className="text-sm sm:text-base text-gray-300">{service.description}</p>
+      </div>
+
+      {/* Title on the Right */}
+      <span className="font-semibold text-lg text-right">{service.title}</span>
+    </button>
+  </Link>
+</div>
+
+
+    );
+  })}
+</div>
+
 </div>
 
 

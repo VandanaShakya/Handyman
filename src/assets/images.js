@@ -2,7 +2,7 @@ import excellenceImg from './home/excellence.avif';
 import handymanImg from './home/handyman.avif';
 import masterManchesterImg from './home/master-manchester.avif';
 import logo from './home/logo.png';
-import heroLeftImg from './home/herodataimg.png'
+import heroLeftImg from './home/heroleftimg.png'
 import heroLine from './home/heroline.avif'
 
 import homepic1 from './home/homepic1.webp'
