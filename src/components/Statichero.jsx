@@ -5,7 +5,7 @@ import images from '../assets/images'
 
 const Statichero = () => {
    const handleWhatsAppClick = () => {
-    const phoneNumber = "+44 7936 475452"; 
+    const phoneNumber = "+447936475452"; 
     const message = "Hello! I’d like to know more about your services.";
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
@@ -19,7 +19,7 @@ const Statichero = () => {
 
     {/* Left Side (Hero Section) */}
    <motion.div
-  className="flex flex-col items-center justify-center font-sans w-full md:w-[45%] text-center min-h-[70vh] space-y-4 px-4 sm:px-6"
+  className="flex flex-col items-center justify-center font-sans w-full md:w-[45%] text-center min-h-[50vh] space-y-4 px-4 sm:px-6"
   initial={{ opacity: 0, y: 50 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 1, ease: "easeOut" }}

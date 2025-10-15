@@ -197,6 +197,13 @@ import repair6 from './services/repair5.webp'
 import repair7 from './services/repair7.webp'
 import repair8 from './services/repair8.webp'
 
+// carehome //
+import carehome1 from './services/carehome1.jpg'
+import carehome2 from './services/carehome2.webp'
+import carehome3 from './services/carehome3.jpg'
+import carehome4 from './services/carehome4.jpg'
+import carehome5 from './services/carehome5.jpg'
+
 
 // conatct us //
 import contactusImg from './home/contactus.webp'
@@ -399,6 +406,14 @@ const images = {
     repair6,
     repair7,
     repair8,
+
+
+    // care home //
+    carehome1,
+carehome2,
+carehome3,
+carehome4,
+carehome5,
 
     // conatct us //
     contactusImg,

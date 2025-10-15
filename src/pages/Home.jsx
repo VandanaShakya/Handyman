@@ -39,67 +39,61 @@ const Home = () => {
   <div className="relative max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-8">
 
     {/* Text Content */}
-    <div className="w-full text-center lg:text-center">
-    <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 uppercase tracking-wider text-amber-500">
-  My Mission
-</h1>
+  <div className="w-full mb-16 px-4 sm:px-6 lg:px-8">
+  {/* --- Heading --- */}
+  <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 uppercase tracking-wider text-amber-500 text-left lg:text-center">
+    My Mission
+  </h1>
 
-<p className="text-lg text-slate-300 mb-6">
-  I deliver a high-quality, bespoke handyman service across Bradford, West Yorkshire, and beyond. Every task I undertake is guided by reliability, professionalism, and respect—whether I’m assisting in a private home, supporting a care setting, or completing work for a business. No job is too small or unusual, and I approach every project with the same dedication and attention to detail.
-</p>
+  {/* --- Paragraphs --- */}
+  <p className="sm:text-lg m-auto text-slate-300 mb-6 text-left lg:text-center max-w-full sm:max-w-2xl">
+    I deliver a high-quality, bespoke handyman service across Bradford, West Yorkshire, and beyond. Every task I undertake is guided by reliability, professionalism, and respect—whether I’m assisting in a private home, supporting a care setting, or completing work for a business. No job is too small or unusual, and I approach every project with the same dedication and attention to detail.
+  </p>
 
-<p className="text-base text-slate-300 max-w-2xl mx-auto mb-8">
-Serving South Manchester and nearby areas, B1 Handyman delivers a dependable and professional approach to home repairs and maintenance.
-I’m dedicated to providing prompt, skilled, and reliable solutions — ensuring every job is completed efficiently, safely, and to the highest standard.</p>
+  <p className="text-base m-auto sm:text-lg text-slate-300 mb-8 text-left lg:text-center max-w-full sm:max-w-2xl">
+    Serving South Manchester and nearby areas, B1 Handyman delivers a dependable and professional approach to home repairs and maintenance. I’m dedicated to providing prompt, skilled, and reliable solutions — ensuring every job is completed efficiently, safely, and to the highest standard.
+  </p>
 
-
-      <div className="flex flex-col sm:flex-row justify-center items-center gap-4 flex-wrap mb-16">
-        <div
-          className="flex items-center space-x-2 p-3 bg-neutral-600 rounded-full shadow-md transition duration-300 hover:bg-amber-600 cursor-pointer"
-          
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-            <path d="m9 11 3 3L22 4" />
-          </svg>
-          <span className="font-medium text-sm whitespace-nowrap">Quality</span>
-        </div>
-
-        <div
-          className="flex items-center space-x-2 p-3 bg-neutral-600 rounded-full shadow-md transition duration-300 hover:bg-amber-600 cursor-pointer"
-        
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <circle cx="12" cy="12" r="10" />
-            <polyline points="12 6 12 12 16 14" />
-          </svg>
-          <span className="font-medium text-sm whitespace-nowrap">Reliability</span>
-        </div>
-
-        <div
-          className="flex items-center space-x-2 p-3 bg-neutral-600 rounded-full shadow-md transition duration-300 hover:bg-amber-600 cursor-pointer"
-        
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M7 10v10l2-2h3a4 4 0 0 0 4-4V6a2 2 0 0 0-2-2h-3l-2.5 2.5a1.5 1.5 0 0 1-2.25 0z" />
-            <path d="M21 9v2a4 4 0 0 1-4 4h-3L10 17v-7h1a4 4 0 0 0 4-4V5a2 2 0 0 0-2-2h-1" />
-          </svg>
-          <span className="font-medium text-sm whitespace-nowrap">Trust</span>
-        </div>
-
-        <div
-          className="flex items-center space-x-2 p-3 bg-neutral-600 rounded-full shadow-md transition duration-300 hover:bg-amber-600 cursor-pointer"
-          
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <line x1="12" y1="1" x2="12" y2="23" />
-            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-          </svg>
-          <span className="font-medium text-sm whitespace-nowrap">Value</span>
-        </div>
-
-      </div>
+  {/* --- Quality / Reliability / Trust / Value blocks --- */}
+  <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center">
+    {/* Block 1 */}
+    <div className="flex items-center space-x-2 p-3 bg-neutral-600 rounded-full shadow-md transition duration-300 transform hover:scale-105 hover:bg-amber-600 cursor-pointer">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+        <path d="m9 11 3 3L22 4" />
+      </svg>
+      <span className="font-medium text-sm whitespace-nowrap">Quality</span>
     </div>
+
+    {/* Block 2 */}
+    <div className="flex items-center space-x-2 p-3 bg-neutral-600 rounded-full shadow-md transition duration-300 transform hover:scale-105 hover:bg-amber-600 cursor-pointer">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="12" r="10" />
+        <polyline points="12 6 12 12 16 14" />
+      </svg>
+      <span className="font-medium text-sm whitespace-nowrap">Reliability</span>
+    </div>
+
+    {/* Block 3 */}
+    <div className="flex items-center space-x-2 p-3 bg-neutral-600 rounded-full shadow-md transition duration-300 transform hover:scale-105 hover:bg-amber-600 cursor-pointer">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M7 10v10l2-2h3a4 4 0 0 0 4-4V6a2 2 0 0 0-2-2h-3l-2.5 2.5a1.5 1.5 0 0 1-2.25 0z" />
+        <path d="M21 9v2a4 4 0 0 1-4 4h-3L10 17v-7h1a4 4 0 0 0 4-4V5a2 2 0 0 0-2-2h-1" />
+      </svg>
+      <span className="font-medium text-sm whitespace-nowrap">Trust</span>
+    </div>
+
+    {/* Block 4 */}
+    <div className="flex items-center space-x-2 p-3 bg-neutral-600 rounded-full shadow-md transition duration-300 transform hover:scale-105 hover:bg-amber-600 cursor-pointer">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <line x1="12" y1="1" x2="12" y2="23" />
+        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+      </svg>
+      <span className="font-medium text-sm whitespace-nowrap">Value</span>
+    </div>
+  </div>
+</div>
+
 
     {/* Right Image */}
     {/* <div className="w-full lg:w-1/4 flex justify-center lg:justify-end">
@@ -114,15 +108,22 @@ I’m dedicated to providing prompt, skilled, and reliable solutions — ensurin
 </div>
 
 <div className="max-w-6xl mx-auto border-t border-neutral-600 px-1 ">
+  <section className="px-4 sm:px-6 lg:px-8 mb-16">
+  {/* --- Heading --- */}
   <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center m-2 uppercase tracking-wider text-amber-700">
     Services I Offer
   </h2>
+
+  {/* --- Underline --- */}
   <div className="w-32 sm:w-40 h-1 mx-auto bg-amber-700 rounded-full mb-6"></div>
 
-  <p className="text-lg text-slate-300 mx-auto text-center mb-12 leading-relaxed max-w-4xl">
+  {/* --- Description Paragraph --- */}
+  <p className="text-lg text-slate-300 mx-auto text-left lg:text-center mb-12 leading-relaxed max-w-4xl">
     At HomeWorks, I offer a wide range of handyman services tailored to meet your needs. From painting, decorating, and plastering to full kitchen and bathroom work—including installation, resealing, tiling, and repairs. I also handle renovations, electrics, plumbing, joinery, door hanging, decking, and UPVC window fitting.  
     My expertise extends to external fittings such as handrails, gutters, and catflaps, as well as PC repairs, flatpack assembly, and curtain rails. I can assist with waste removal, garden maintenance, and removals, and much more—ensuring a reliable, professional solution for every task, big or small.
   </p>
+</section>
+
 
   {/* Services Grid */}
  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">

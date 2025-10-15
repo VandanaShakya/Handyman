@@ -29,7 +29,7 @@ import Flooring from './pages/services/Flooring.jsx'
 import Plastering from './pages/services/Plastering.jsx'
 import Repairs from './pages/services/Repairs.jsx'
 import ScrollToTop from './components/ScrollToTop.jsx'
-
+import Carehomes from './pages/services/Carehomes.jsx'
 
 
 
@@ -97,6 +97,7 @@ const App = () => {
       <Route path='/flooring' element={<Flooring />} />
       <Route path='/plastering' element={<Plastering />} />
       <Route path='/repairs' element={<Repairs />} />
+      <Route path='/care-homes' element={<Carehomes />} />
 
    </Routes>
     

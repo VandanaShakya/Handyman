@@ -81,7 +81,7 @@ export default function Navbar() {
               <div className="absolute top-full left-0 mt-0 w-full rounded-md shadow-lg z-20" style={{ backgroundColor: "#f5deb3" }}>
                 <div className="py-1">
                   {[
-                    "Bathrooms", "Odd Jobs", "Decorating", "Tiling", "Kitchen", "Plumbing",
+                     "Care Homes", "Bathrooms", "Odd Jobs", "Decorating", "Tiling", "Kitchen", "Plumbing",
                     "Electrical", "Carpentry", "Gardening", "Roofing", "TV Mount",
                     "Painting", "Wall Paper", "Joinery", "Fencing", "Flooring",
                     "Plastering", "Flat Packing", "Repairs"
@@ -152,7 +152,7 @@ export default function Navbar() {
             {isServicesOpen && (
               <div className="bg-[#f5deb3] flex flex-col max-h-[300px] overflow-y-auto">
                 {[
-                  "Bathrooms", "Odd Jobs", "Decorating", "Tiling", "Kitchen", "Plumbing",
+                  "Care Homes","Bathrooms", "Odd Jobs", "Decorating", "Tiling", "Kitchen", "Plumbing",
                   "Electrical", "Carpentry", "Gardening", "Roofing", "TV Mount",
                   "Painting", "Wall Paper", "Joinery", "Fencing", "Flooring",
                   "Plastering", "Flat Packing", "Repairs"

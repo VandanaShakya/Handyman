@@ -11,10 +11,8 @@ const Map = () => {
       className=" p-6 sm:p-8 w-full"
     >
       <div className="text-center mb-6 sm:mb-8">
-        <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mx-auto mb-3">
-          <MapPin className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
-        </div>
-        <h2 className="text-xl sm:text-2xl font-bold text-white mb-1">Our Location</h2>
+      
+        <h2 className="text-xl sm:text-2xl font-bold text-white mb-1">My Location</h2>
         <p className="text-sm sm:text-base text-[#c4c5c5]">Visit or find us easily on the map below.</p>
       </div>
 

@@ -340,6 +340,7 @@ export const plumbingCards = [
 
 
 // electrical //
+
 export const electricalData = [
   {
     id: 1,
@@ -997,4 +998,66 @@ export const repairData = [
     imageSrc: images.carpentry6,
     alt: 'Emergency repair service',
   },
+];
+
+
+
+// carehomes //
+export const careHomesData = [
+  {
+    id: 1,
+    image: images.carehome1,
+    title: "Electrical Repairs & Maintenance",
+    short: "Reliable fixes for all your electrical issues.",
+    long: [
+      "Our skilled electricians handle everything from faulty switches to tripped circuits with precision.",
+      "We ensure safe and lasting repairs that restore full functionality to your care home or facility.",
+      "Trust us to diagnose and fix problems quickly, minimizing downtime and risk."
+    ],
+  },
+  {
+    id: 2,
+    image: images.carehome2,
+    title: "Lighting Installation & Upgrades",
+    short: "Bright ideas for modern, energy-efficient lighting.",
+    long: [
+      "We install and upgrade all types of lighting — LED panels, ceiling fixtures, and outdoor lights.",
+      "Our team ensures proper wiring and placement for the best illumination and aesthetic appeal in care home spaces.",
+      "Save energy while enhancing your facility with smart, efficient lighting solutions."
+    ],
+  },
+  {
+    id: 3,
+    image: images.carehome3,
+    title: "Socket & Switch Fitting",
+    short: "Professional installations for safety and convenience.",
+    long: [
+      "Whether you need new sockets or want to relocate existing ones, we handle all installations neatly and safely.",
+      "We use high-quality materials and follow electrical safety standards in every job for care homes.",
+      "Get the perfect balance of function, accessibility, and safety with our expert fitting services."
+    ],
+  },
+  {
+    id: 4,
+    image: images.carehome4,
+    title: "Electrical Wiring & Rewiring",
+    short: "Safe, compliant wiring for modern care facilities.",
+    long: [
+      "Our rewiring services cover renovations, new builds, and older electrical systems needing upgrades.",
+      "We ensure proper load balancing, secure connections, and compliance with UK safety regulations.",
+      "Enjoy a reliable power setup that keeps your care home and appliances protected at all times."
+    ],
+  },
+  {
+    id: 5,
+    image: images.carehome5,
+    title: "Appliance Installation & Testing",
+    short: "Expert setup for care home appliances.",
+    long: [
+      "From ovens and washing machines to medical equipment, we install all essential appliances safely.",
+      "Post-installation checks ensure appliances operate correctly and safely for staff and residents.",
+      "We make sure your care home runs smoothly from day one, with zero hassle."
+    ],
+  },
+  
 ];
